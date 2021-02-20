@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    height: 100%;
+}
+ 
+header{
+    display: block;
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-page{
+    background-image: url(/assets/images/AdobeStock_125223348_Preview.jpeg);
+    height: 50%;
+}
