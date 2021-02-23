@@ -16,18 +16,31 @@ body{
 }
 
 nav{
-    justify-content: space-around;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top:5px;
+
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #1A1A1A;
     height: 60px;
     width: 98%;
     border-radius: 5px;
-    margin: auto;
-    margin-top: 5px;
+    
 }
 
 a{
     text-decoration: none;
+    color: white;
+}
+
+a:hover{
+ color: #FA5F1A;
+}
+
+ul, li, .logo, .nav-links {
+    display: inline;
 }
  
 header{
@@ -40,15 +53,18 @@ header{
     
 }
 
+li{
+    padding: 10px;
+}
+
 .logo{
-    display: inline;
     margin: 10px;
     height: 40px;
     width: auto;
 }
 
 .nav-links{
-    display: inline;
+    padding: 15px;
 }
 
 .hero-page{
