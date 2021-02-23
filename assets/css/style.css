@@ -1,0 +1,66 @@
+
+body,html{
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding:0;
+    color: white;
+}
+
+
+body{
+    background-image: url(/assets/images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A1A1A;
+    height: 60px;
+    width: 98%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+ 
+header{
+    display: block;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo{
+    display: inline;
+    margin: 10px;
+    height: 40px;
+    width: auto;
+}
+
+.nav-links{
+    display: inline;
+}
+
+.hero-page{
+    height: 50%;
+}
+
+.name{
+    display: inline;
+    padding: 10px 10px 7px 10px;
+    font-family: 'Courier Prime';
+    line-height: 2.75;
+    font-size: 36px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.65);
+}
