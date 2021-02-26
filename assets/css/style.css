@@ -140,6 +140,7 @@ article{
     height: 350px;
     border-radius: 5px;
     margin: 10px;
+    
 }
 
 /* Allows background of project tile to become solid when a user hovers over it */
@@ -182,11 +183,13 @@ article{
 /* Separates some project tiles into columns */
 .project-subsection{
     column-count: 2;
+    width: 90%
 }
 
-/* Size of project tiles that are separated into columns */
+/* Fixing for project tiles sorted in columns */
 .project-subsection .projects{
-    width: 100%;
+    width: 56%;
+    margin: 2%
 }
 
 /* Positioning for project tiles */
@@ -212,12 +215,17 @@ article{
     background-color: #1A1A1A;
 }
 
+
 /* Corrents layout of project tiles when viewport gets too small */
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1400px){
 
     .project-subsection{
         flex-flow: column;
         width: 90%;
+    }
+
+    .project-subsection .projects{
+        width: 100%;
     }
 
     .projects{
