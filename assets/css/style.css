@@ -1,3 +1,4 @@
+/* Simple reset code and sets font for the HTML Document */
 body,html{
     height: 100%;
     font-family: 'Roboto Mono', monospace;
@@ -6,7 +7,7 @@ body,html{
     color: white;
 }
 
-
+/* Adds a fixed background to the web page */
 body{
     background-image: url(/assets/images/background.jpg);
     background-position: center;
@@ -15,71 +16,94 @@ body{
     background-attachment: fixed;
 }
 
+/* Sets position and appearance of the nav bar at the top of the screen */
 nav{
     margin-left: 1%;
     margin-right: 1%;
     margin-top:5px;
 
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #1A1A1A;
     height: fit-content;
     width: 98%;
     border-radius: 5px;
 }
 
+/* Removes styling from links and changes default link color */
 a{
     text-decoration: none;
     color: white;
 }
 
+/* Changes links to orange when hovered */
 a:hover{
- color: #FA5F1A;
+    color: #FA5F1A;
+    cursor: pointer;
 }
 
+/* Places list items adjacent for the nav and the footer */
 ul, li, .logo, .nav-links {
     display: inline;
 }
 
+/* Creates spacing between subsequent list items for the nav and footer */
 li{
     padding: 10px;
 }
- 
-header{
-    position: relative;
+
+/* Sets positioning for main sections of the web page */
+header, nav{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+/* Centers nameplate and other content in the header */
+header{
+    justify-content: center;
+}
+
+/* General styling rules for article elements */
 article{
     padding: 10px 15px;
     background-color: #1a1a1a65;
 }
 
+/* Sizing for logo */
 .logo{
     margin: 10px;
     height: 40px;
     width: auto;
 }
 
+/* Extra padding for navbar links */
 .nav-links{
     padding: 15px;
 }
 
+/* Creates space for name plate and background to show before subsequent page content */
 .hero-page{
     height: 50%;
 }
 
-.personal-info{
+/* Adds flex to multiple content-concerned classes */
+.personal-info, .projects, .thumbnail, .project-subsection{
     display: flex;
     align-items: center;
+}
+
+/* Centers content in sections of web page */
+.thumbnail, .project-subsection{
+    justify-content: center;
+}
+
+/* Styline for name plate with photo displayed in the middle of the webpage */
+.personal-info{
     background-color: rgba(0, 0, 0, 0.65);
     padding: 10px;
     border-radius: 5px;
 }
 
+/* Styling for name */
 .name{
     display: inline;
     padding: 10px 10px 7px 10px;
@@ -87,35 +111,54 @@ article{
     line-height: 1;
     font-size: 36px;
     color: #ffffff;
-    
 }
 
-.projects{
+/* Display for content in about me section which centers the content in the web page */
+#about-me{
     display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Styles the content in the about me section */
+.about-section{
+    width: 50%;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* About section header size */
+.about-section h1{
+    font-size: xx-large;
+}
+
+/* Defines size and layout of project tiles */
+.projects{
     flex-flow: row;
-    align-items: center;
-    width: 80%;
-    height: fit-content;
+    min-height: fit-content;
+    height: 350px;
     border-radius: 5px;
     margin: 10px;
 }
 
+/* Allows background of project tile to become solid when a user hovers over it */
 .projects:hover{
     background-color: #1A1A1A;
 }
 
+/* Changes the title of the project to orange when the user hovers over the project tile */
 .projects:hover h1{
     color: #FA5F1A;
 }
 
+/* Minor styling for project tiles */
 .thumbnail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     margin: 10px;
 }
 
+/* Defines responsive image sizing for project tiles */
 .thumbnail img{
     flex-shrink: 0;
     min-width: 50%;
@@ -125,47 +168,35 @@ article{
     opacity: 0.65;
 }
 
+/* Helps show the image of a project tile is a clickable link */
 .thumbnail img:hover{
     cursor: pointer;
     opacity: 1;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-
-
+/* Defines written content size for project tiles */
 .project-description{
     width: 50%;
 }
 
+/* Separates some project tiles into columns */
 .project-subsection{
     column-count: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 80%;  
 }
 
+/* Size of project tiles that are separated into columns */
 .project-subsection .projects{
     width: 100%;
 }
 
+/* Positioning for project tiles */
 #projects-section{
     display: flex;
     align-items: center;
     flex-flow: column;
 }
 
+/* Sizing and shape of personal image */
 #display-pic{
     height: 80px;
     width: auto;
@@ -173,6 +204,7 @@ article{
     margin: 15px;    
 }
 
+/* Content layout for footer */
 #contact-info{
     display: flex;
     justify-content: space-evenly;
@@ -180,3 +212,16 @@ article{
     background-color: #1A1A1A;
 }
 
+/* Corrents layout of project tiles when viewport gets too small */
+@media screen and (max-width: 1500px){
+
+    .project-subsection{
+        flex-flow: column;
+        width: 98%;
+    }
+
+    .projects{
+        flex-flow: column;
+        height: fit-content;
+    }
+}
