@@ -217,11 +217,29 @@ article{
 
     .project-subsection{
         flex-flow: column;
-        width: 98%;
+        width: 90%;
     }
 
     .projects{
         flex-flow: column;
         height: fit-content;
+        width: 90%;
+    }
+
+    .thumbnail img{
+        max-width: 100%;
+    }
+
+    
+}
+
+/* Makes the footer display more pretty at smaller screen widths */
+@media screen and (max-width: 812px){
+    #contact-info{
+        justify-content: left;
+    }
+    
+    footer li{
+        display: block;
     }
 }
