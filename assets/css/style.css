@@ -18,6 +18,7 @@ body{
 
 /* Sets position and appearance of the nav bar at the top of the screen */
 nav{
+    position: fixed;
     margin-left: 1%;
     margin-right: 1%;
     margin-top:5px;
