@@ -237,7 +237,7 @@ article{
 
     .project-subsection{
         flex-flow: column;
-        width: 90%;
+        width: 100%;
     }
 
     .project-subsection .projects{
@@ -266,4 +266,5 @@ article{
     footer li{
         display: block;
     }
+
 }
