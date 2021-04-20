@@ -43,9 +43,10 @@ a:hover{
 }
 
 /* Places list items adjacent for the nav and the footer */
-ul, li, .logo, .nav-links {
+nav > ul, nav > ul > li, footer > ul, footer > ul > li,.logo, .nav-links {
     display: inline;
 }
+
 
 /* Creates spacing between subsequent list items for the nav and footer */
 li{
@@ -61,6 +62,7 @@ header, nav{
 /* Centers nameplate and other content in the header */
 header{
     justify-content: center;
+    z-index: 1000;
 }
 
 /* General styling rules for article elements */
@@ -93,7 +95,7 @@ article{
 }
 
 /* Centers content in sections of web page */
-.thumbnail, .project-subsection{
+.thumbnail {
     justify-content: center;
 }
 
@@ -139,9 +141,9 @@ article{
     flex-flow: row;
     min-height: fit-content;
     height: 350px;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 10px;
-    
+
 }
 
 /* Allows background of project tile to become solid when a user hovers over it */
@@ -183,21 +185,34 @@ article{
 
 /* Separates some project tiles into columns */
 .project-subsection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     column-count: 2;
-    width: 90%
+    width: 100%
 }
 
 /* Fixing for project tiles sorted in columns */
 .project-subsection .projects{
-    width: 56%;
-    margin: 2%
+    width: 47.25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 /* Positioning for project tiles */
 #projects-section{
+    margin-top: 30px;
     display: flex;
     align-items: center;
     flex-flow: column;
+    justify-content: space-between;
+}
+
+/* Header Project Styling */
+#header-project{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Sizing and shape of personal image */
@@ -226,7 +241,7 @@ article{
     }
 
     .project-subsection .projects{
-        width: 100%;
+        width: 90%;
     }
 
     .projects{
