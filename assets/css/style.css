@@ -233,7 +233,7 @@ article{
 
 
 /* Corrents layout of project tiles when viewport gets too small */
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1700px){
 
     .project-subsection{
         flex-flow: column;
