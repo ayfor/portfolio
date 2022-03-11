@@ -1,191 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A4 Portfolio</title>
-    <link rel="shortcut icon" type="image/jpg" href="/assets/images/a4 logo.svg"/>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="/assets/images/a4 logo.svg"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navbar with links to page sections -->
     <nav>
-        <img class="logo" src="./assets/images/a4_logo.svg" alt="A4 Studios Logo">
-        
-        <ul class="nav-links">
+      <img
+        class="logo"
+        src="./assets/images/a4_logo.svg"
+        alt="A4 Studios Logo"
+      />
 
-            <li>
-                <a href="./assets/Joshua Stubbington Resume.pdf" download> Resume</a>
-            </li>
-            <li>
-                <a href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a href="#projects-section">Projects</a>
-            </li>
-            <li>
-                <a href="#contact-info">Contact</a>
-            </li>
-            
-        </ul>
+      <ul class="nav-links">
+        <li>
+          <a href="./assets/Joshua Stubbington Resume.pdf" download> Resume</a>
+        </li>
+        <li>
+          <a href="#about-me">About Me</a>
+        </li>
+        <li>
+          <a href="#projects-section">Projects</a>
+        </li>
+        <li>
+          <a href="#contact-info">Contact</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- Personal Info (Name and Picture) -->
     <header class="hero-page">
-        <div class="personal-info">
-            <img id="display-pic" src="./assets/images/selfie.jpg" alt="Profile Image">
-            <h1 class="name">
-                JOSHUA STUBBINGTON
-            </h1>   
-        </div>
+      <div class="personal-info">
+        <img
+          id="display-pic"
+          src="./assets/images/selfie.jpg"
+          alt="Profile Image"
+        />
+        <h1 class="name">JOSHUA STUBBINGTON</h1>
+      </div>
     </header>
 
     <!-- "About" Section and content -->
     <section id="about-me">
-        <article class="about-section" >
-            <h1>About Me</h1>
-            <p>
-                I am a recently graduated mechanical engineering student from Carleton University. I have experience in project integration and management as well as a vast array of technical skills. My interests include working with diverse teams to solve problems, project management and software development.
-            </p> 
-        </article>
+      <article class="about-section">
+        <h1>About Me</h1>
+        <p>
+          I am an engineering graduate with a passion for programming and
+          software development. I am currently working for Leonardo Canada
+          Electronics in Ottawa, developing the next generation of Electronic
+          Warfare simulation products. My interests include working with diverse
+          teams to solve problems, project management and software development.
+        </p>
+      </article>
     </section>
 
     <!-- Section with project tiles where each tile represents a unique project or application -->
-    <section id="projects-section" >
-        <article class="projects" id="header-project">
-            <div class="thumbnail">
-                <a href="https://github.com/ayfor/tech_blog" target="_blank">
-                    <img src="./assets/images/techblog_screenshot.png"/>
-                </a>
-            </div>
-            <div class="project-description">
-                <h1>Tech Blog</h1>
-                <p>This application is built using Handlebars, Express and MySQL. It enables a user to Sign Up with a new account or Login with an existing account to create Posts on the User's Dashboard page. </p>
-            </div>
-        </article>
-        <article class="projects" id="header-project">
-            <div class="thumbnail">
-                <a href="https://github.com/ayfor/ecommerce_back_end" target="_blank">
-                    <img src="./assets/images/ecommerce_screenshot.png"/>
-                </a>
-            </div>
-            <div class="project-description">
-                <h1>E-Commerce Backend</h1>
-                <p>This application enables users to create and maintain a database of online products.The application enables a user to Create, Read, Update and Delete entries from the three main tables including Products, Categories and Tags through various API endpoints.</p>
-            </div>
-        </article>
-        <article class="projects" id="header-project">
-            <div class="thumbnail">
-                <a href="https://github.com/ayfor/employee_tracker" target="_blank">
-                    <img src="./assets/images/employee_screenshot.png"/>
-                </a>
-            </div>
-            <div class="project-description">
-                <h1>Employee Tracker</h1>
-                <p>This application enables a user to create their own employee tracker using a basic Node.js application. A user is able to add and view employees, roles, and departments. A user is also able to update an employee's role. All data that the user has entered or manipulated is continually synced to a local MySQL database for easy integration with other systems.</p>
-            </div>
-        </article>
-        <article class="projects" id="header-project">
-            <div class="thumbnail">
-                <a href="https://ayfor.github.io/left-over-variables/" target="_blank">
-                    <img src="./assets/images/leftovervars_screenshot.png"/>
-                </a>
-            </div>
-            <div class="project-description">
-                <h1>Leftover Variables</h1>
-                <p>This application was completed alongside a team of 5 developers with the goal of allowing users to log the food present in thier pantry. This list can then be used to search recipes based on your current leftovers in an effort to reduce food waste and promote a waste free lifestyle.</p>
-            </div>
-        </article>
-        <div class="project-subsection">
-            <article class="projects">
-                <div class="thumbnail">
-                    <a href="https://github.com/ayfor/weather_dashboard" target="_blank">
-                        <img src="./assets/images/weather_dashboard_screenshot.png"/>
-                    </a>
-                </div>
-                <div class="project-description">
-                    <h1>Weather Dashboard</h1>
-                    <p>This small application enables users to search for a city in the input field and recieve weather data for the city. Once a city is searched, the city is added to a card to the left hand side of the page. A user can then click on that card to revisit the weather information for that city.</p>
-                </div>            
-            </article>
-            <article class="projects">
-                <div class="thumbnail">
-                    <a href="https://github.com/ayfor/day_scheduler" target="_blank">
-                        <img src="./assets/images/day_scheduler_screenshot.png"/>
-                    </a>
-                </div>
-                <div class="project-description">
-                    <h1>Work Day Scheduler</h1>
-                    <p>This application enables a user to enter tasks for each hour of a given day with the current date listed at the top of the page. All entered tasks are stored in local storage so a user may navigate away from the page and revisit their tasks later on. </p>
-                </div>            
-            </article>
-            <article class="projects">
-                <div class="thumbnail">
-                    <a href="https://github.com/ayfor/password_generator" target="_blank">
-                        <img src="./assets/images/password_generator_screenshot.png"/>
-                    </a>
-                </div>
-                <div class="project-description">
-                    <h1>Password Generator</h1>
-                    <p>This project is a simple application that generates a password according to the criteria specified by the user. The user starts the program by selecting the “Generate Password” button. Then the user is guided through a series of password criteria listed below where the user must select at least one type of character for the password (e.g.numeric or special characters).</p>
-                </div>            
-            </article>
-            <article class="projects">
-                <div class="thumbnail">
-                    <a href="https://github.com/ayfor/code_quiz" target="_blank">
-                        <img src="./assets/images/code_quiz_screenshot.png"/>
-                    </a>
-                </div>
-                <div class="project-description">
-                    <h1>Code Quiz</h1>
-                    <p>This is a simple web application consisting of a short quiz on basic coding related questions. It enables a user to complete a timed multiple choice quiz and recieve a score. The score can then be recorded in a locally stored leaderboard.</p>
-                </div>            
-            </article>
-            <article class="projects">
-                <div class="thumbnail">
-                    <a href="#" target="_blank">
-                        <img src="./assets/images/imp_placeholder.png"/>
-                    </a>
-                </div>
-                <div class="project-description">
-                    <h1>Inventory Management Project</h1>
-                    <p>This application is currently under development. Its goal is to provide a task management platform to organize restaurants and other businesses in the service industry.</p>
-                </div>            
-            </article>
-            <article class="projects">
-                <div class="thumbnail">
-                    <a href="https://ayfor.github.io/Code-Refactor/" target="_blank">
-                        <img src="./assets/images/horiseon_screenshot.png"/>
-                    </a>
-                </div>
-                <div class="project-description">
-                    <h1>Horiseon Code Refactoring</h1>
-                    <p>This website details the services offered by Horiseon Social Solution Services Inc. These services include search engine optimization which can impove a companies precense on the web, online reputation management which closely manages social media to promote a positive brand image and social media marketing which leverages the power of social media platforms to drive sales and brand notoriety.</p>
-                </div>            
-            </article>   
+    <section id="projects-section">
+      <article class="projects" id="header-project">
+        <div class="thumbnail">
+          <a href="https://github.com/ayfor/tech_blog" target="_blank">
+            <img src="./assets/images/techblog_screenshot.png" />
+          </a>
         </div>
-        
+        <div class="project-description">
+          <h1>Tech Blog</h1>
+          <p>
+            This application is built using Handlebars, Express and MySQL. It
+            enables a user to Sign Up with a new account or Login with an
+            existing account to create Posts on the User's Dashboard page.
+          </p>
+        </div>
+      </article>
+      <article class="projects" id="header-project">
+        <div class="thumbnail">
+          <a href="https://github.com/ayfor/ecommerce_back_end" target="_blank">
+            <img src="./assets/images/ecommerce_screenshot.png" />
+          </a>
+        </div>
+        <div class="project-description">
+          <h1>E-Commerce Backend</h1>
+          <p>
+            This application enables users to create and maintain a database of
+            online products.The application enables a user to Create, Read,
+            Update and Delete entries from the three main tables including
+            Products, Categories and Tags through various API endpoints.
+          </p>
+        </div>
+      </article>
+      <article class="projects" id="header-project">
+        <div class="thumbnail">
+          <a href="https://github.com/ayfor/employee_tracker" target="_blank">
+            <img src="./assets/images/employee_screenshot.png" />
+          </a>
+        </div>
+        <div class="project-description">
+          <h1>Employee Tracker</h1>
+          <p>
+            This application enables a user to create their own employee tracker
+            using a basic Node.js application. A user is able to add and view
+            employees, roles, and departments. A user is also able to update an
+            employee's role. All data that the user has entered or manipulated
+            is continually synced to a local MySQL database for easy integration
+            with other systems.
+          </p>
+        </div>
+      </article>
+      <article class="projects" id="header-project">
+        <div class="thumbnail">
+          <a
+            href="https://ayfor.github.io/left-over-variables/"
+            target="_blank"
+          >
+            <img src="./assets/images/leftovervars_screenshot.png" />
+          </a>
+        </div>
+        <div class="project-description">
+          <h1>Leftover Variables</h1>
+          <p>
+            This application was completed alongside a team of 5 developers with
+            the goal of allowing users to log the food present in thier pantry.
+            This list can then be used to search recipes based on your current
+            leftovers in an effort to reduce food waste and promote a waste free
+            lifestyle.
+          </p>
+        </div>
+      </article>
+      <div class="project-subsection">
+        <article class="projects">
+          <div class="thumbnail">
+            <a
+              href="https://github.com/ayfor/weather_dashboard"
+              target="_blank"
+            >
+              <img src="./assets/images/weather_dashboard_screenshot.png" />
+            </a>
+          </div>
+          <div class="project-description">
+            <h1>Weather Dashboard</h1>
+            <p>
+              This small application enables users to search for a city in the
+              input field and recieve weather data for the city. Once a city is
+              searched, the city is added to a card to the left hand side of the
+              page. A user can then click on that card to revisit the weather
+              information for that city.
+            </p>
+          </div>
+        </article>
+        <article class="projects">
+          <div class="thumbnail">
+            <a href="https://github.com/ayfor/day_scheduler" target="_blank">
+              <img src="./assets/images/day_scheduler_screenshot.png" />
+            </a>
+          </div>
+          <div class="project-description">
+            <h1>Work Day Scheduler</h1>
+            <p>
+              This application enables a user to enter tasks for each hour of a
+              given day with the current date listed at the top of the page. All
+              entered tasks are stored in local storage so a user may navigate
+              away from the page and revisit their tasks later on.
+            </p>
+          </div>
+        </article>
+        <article class="projects">
+          <div class="thumbnail">
+            <a
+              href="https://github.com/ayfor/password_generator"
+              target="_blank"
+            >
+              <img src="./assets/images/password_generator_screenshot.png" />
+            </a>
+          </div>
+          <div class="project-description">
+            <h1>Password Generator</h1>
+            <p>
+              This project is a simple application that generates a password
+              according to the criteria specified by the user. The user starts
+              the program by selecting the “Generate Password” button. Then the
+              user is guided through a series of password criteria listed below
+              where the user must select at least one type of character for the
+              password (e.g.numeric or special characters).
+            </p>
+          </div>
+        </article>
+        <article class="projects">
+          <div class="thumbnail">
+            <a href="https://github.com/ayfor/code_quiz" target="_blank">
+              <img src="./assets/images/code_quiz_screenshot.png" />
+            </a>
+          </div>
+          <div class="project-description">
+            <h1>Code Quiz</h1>
+            <p>
+              This is a simple web application consisting of a short quiz on
+              basic coding related questions. It enables a user to complete a
+              timed multiple choice quiz and recieve a score. The score can then
+              be recorded in a locally stored leaderboard.
+            </p>
+          </div>
+        </article>
+        <article class="projects">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="./assets/images/imp_placeholder.png" />
+            </a>
+          </div>
+          <div class="project-description">
+            <h1>Inventory Management Project</h1>
+            <p>
+              This application is currently under development. Its goal is to
+              provide a task management platform to organize restaurants and
+              other businesses in the service industry.
+            </p>
+          </div>
+        </article>
+        <article class="projects">
+          <div class="thumbnail">
+            <a href="https://ayfor.github.io/Code-Refactor/" target="_blank">
+              <img src="./assets/images/horiseon_screenshot.png" />
+            </a>
+          </div>
+          <div class="project-description">
+            <h1>Horiseon Code Refactoring</h1>
+            <p>
+              This website details the services offered by Horiseon Social
+              Solution Services Inc. These services include search engine
+              optimization which can impove a companies precense on the web,
+              online reputation management which closely manages social media to
+              promote a positive brand image and social media marketing which
+              leverages the power of social media platforms to drive sales and
+              brand notoriety.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- Web page footer with personal contact information -->
     <footer id="contact-info">
-        <ul>
-            <li>Email: <a href="mailto:josh.a.stubbington@gmail.com">josh.a.stubbington@gmail.com</a></li>
-            <li>
-                <div style="display: inline-block;">Phone Number: (123) 456-7890</div>
-            </li>
-            <li>
-                <a href="https://github.com/ayfor" target="_blank">Github</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/joshua-stubbington/?originalSubdomain=ca">LinkedIn</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          Email:
+          <a href="mailto:josh.a.stubbington@gmail.com"
+            >josh.a.stubbington@gmail.com</a
+          >
+        </li>
+        <li>
+          <div style="display: inline-block">Phone Number: (123) 456-7890</div>
+        </li>
+        <li>
+          <a href="https://github.com/ayfor" target="_blank">Github</a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/joshua-stubbington/?originalSubdomain=ca"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
     </footer>
-    
-</body>
+  </body>
 </html>
